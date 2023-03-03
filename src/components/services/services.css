@@ -1,0 +1,58 @@
+.services__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.card {
+  background-color: var(--color-bg-variant);
+  border: 1.5px solid var(--color-primary-variant);
+  border-radius: 0 0 1.8rem 1.8rem;
+  transition: var(--transition);
+  flex: 1;
+}
+.card__banner {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}
+.card__banner h3 {
+  color: var(--color-bg);
+  text-align: center;
+  font-weight: 600;
+}
+.card__list {
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 1.5rem 1.8rem;
+}
+.card:hover {
+  background-color: var(--color-bg);
+}
+.card__list li {
+  display: flex;
+  gap: 0.5rem;
+}
+.card__list li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.card__list-marker {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  position: relative;
+  top: -2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .services__container {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services__container {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+}

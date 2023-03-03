@@ -1,0 +1,59 @@
+.experience__container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.experience__card-board {
+  background-color: var(--color-bg-variant);
+  flex: 1;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.experience__card-board h3 {
+  color: var(--color-primary);
+  text-align: center;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+.experience__card-board > div {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.experience__card {
+  display: flex;
+  gap: 0.7rem;
+  padding: 1.25rem;
+}
+.experience__card svg {
+  position: relative;
+  top: 0.32em;
+  color: var(--color-primary);
+}
+.experience__card h5 {
+  font-size: 0.95rem;
+}
+.experience__card small {
+  font-size: 0.8rem;
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 992px) {
+  .experience__container {
+    flex-direction: column;
+  }
+
+  .experience__card-board > div {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience__card-board > div {
+    grid-template-columns: auto auto;
+  }
+  .experience__card-board {
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+}
